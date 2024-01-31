@@ -1,0 +1,49 @@
+﻿<Window x:Class="Vereshchagina1.AddShiftWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vereshchagina1"
+        mc:Ignorable="d"
+        Title="AddShiftWindow" SizeToContent="WidthAndHeight" MinHeight="300" MinWidth="480">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150pt"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label Content="* Выберите дату начала:" Height="30" Margin="0 10" Foreground="#531A50"/>
+            <Label Content="* Выберите дату окончания:" Height="30" Margin="0 10" Foreground="#531A50"/>
+            <Label Content="* Информация о сотрудниках:" Height="30" Margin="0 10" Foreground="#531A50"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <DatePicker x:Name="DateOnDatePicker" Height="30" Width="250" Margin="0 10" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="#531A50"/>
+                <ComboBox Width="50" Margin="5 10" VerticalContentAlignment="Center"/>
+                <Label Content=":" VerticalContentAlignment="Center"/>
+                <ComboBox Width="50" Margin="5 10" VerticalContentAlignment="Center"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <DatePicker x:Name="DateEndDatePicker" Height="30" Width="250" Margin="0 10" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="#531A50"/>
+                <ComboBox Height="30" Width="50" Margin="5 10" VerticalContentAlignment="Center"/>
+                <Label Content=":" VerticalContentAlignment="Center"/>
+                <ComboBox Height="30" Width="50" Margin="5 10" VerticalContentAlignment="Center"/>
+            </StackPanel>
+            <TextBox x:Name="InfoEmployShiftTextBox" TextWrapping="Wrap" Margin="5 0"  Height="50" Width="Auto" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="#531A50"/>
+            
+
+        </StackPanel>
+
+        <Button x:Name="AddShiftButton" Content="Создать смену" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10pt" Height="30" Width="200" Background="#531A50" FontWeight="SemiBold" Foreground="AliceBlue" BorderBrush="#531A50" VerticalContentAlignment="Center"/>
+        <Button x:Name="ExitButton" Grid.Row="2" Grid.ColumnSpan="2" Content="Х" HorizontalAlignment="Right" VerticalAlignment="Stretch" Margin="10 0" Height="30" Width="30" Background="Red" Foreground="AliceBlue" FontWeight="SemiBold" BorderBrush="Red" Click="ExitButton_Click"/>
+    </Grid>
+</Window>

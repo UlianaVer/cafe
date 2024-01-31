@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Update="views\CookWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="views\OrdersCookWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="views\OrdersWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="views\ShiftManagementWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="views\AddOrderWaiterWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="views\OrdersWaiterWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="views\WaiterWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="views\CookWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="views\OrdersCookWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="views\OrdersWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="views\ShiftManagementWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="views\AddOrderWaiterWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="views\OrdersWaiterWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="views\WaiterWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

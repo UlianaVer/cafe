@@ -1,0 +1,48 @@
+﻿<Window x:Class="Vereshchagina1.waiter.AddOrderWaiterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vereshchagina1.waiter"
+        mc:Ignorable="d"
+        Title="AddOrderWaiterWindow" SizeToContent="WidthAndHeight" MinHeight="300" MinWidth="450">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="140pt"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label Content="* Введите столик:" Height="30" Margin="0 10" Foreground="#531A50"/>
+            <Label Content="* Введите дату:" Height="30" Margin="0 10" Foreground="#531A50"/>
+            <Label Content="Выберите статус:" Height="30" Margin="0 10" Foreground="#531A50"/>
+            <Label Content="Выберите клиента:" Height="30" Margin="0 10" Foreground="#531A50"/>
+            <Label Content="* Введите количество людей:" Height="30" Margin="0 10" Foreground="#531A50"/>
+            <Label Content="* Выберите блюда и напитки:" Height="30" Margin="0 10" Foreground="#531A50"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBox x:Name="NameTextBox" Height="30" Width="250" Margin="0 10" VerticalContentAlignment="Center" TextWrapping="Wrap" BorderThickness="1" BorderBrush="#531A50"/>
+            <DatePicker Height="30" Width="250" Margin="0 10" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="#531A50"/>
+             <ComboBox x:Name="ComboBoxStatus" Height="30" Width="250" Margin="0 10" VerticalContentAlignment="Center">
+                <ComboBoxItem Content="Принят"/>
+                <ComboBoxItem Content="Оплачен"/>
+            </ComboBox>
+            <ComboBox x:Name="ComboBoxUser" Height="30" Width="250" Margin="0 10" VerticalContentAlignment="Center">
+            </ComboBox>
+            <TextBox x:Name="LoginTextBox" Height="30" Width="250" Margin="0 10" VerticalContentAlignment="Center" TextWrapping="Wrap" BorderThickness="1" BorderBrush="#531A50"/>
+            <TextBox x:Name="AddOrder" TextWrapping="Wrap" Margin="5 0"  Height="50" Width="250" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="#531A50"/>
+           
+
+        </StackPanel>
+
+        <Button Content="Сохранить" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10pt" Height="30" Width="200" Background="#531A50" FontWeight="SemiBold" Foreground="AliceBlue" BorderBrush="#531A50" VerticalContentAlignment="Center"/>
+        <Button x:Name="ExitButton" Grid.Row="2" Grid.ColumnSpan="2" Content="Х" HorizontalAlignment="Right" VerticalAlignment="Stretch" Margin="10 0" Height="30" Width="30" Background="Red" Foreground="AliceBlue" FontWeight="SemiBold" BorderBrush="Red" Click="ExitButton_Click"/>
+    </Grid>
+</Window>
